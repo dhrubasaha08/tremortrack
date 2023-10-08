@@ -690,11 +690,11 @@ function initLayers() {
 
     for (let id in layerTextures) {
         const texture = textureLoader.load(layerTextures[id]);
-        const geometry = new THREE.SphereGeometry(1.05, 32, 32);
+        const geometry = new THREE.SphereGeometry(1.04, 32, 32);
         const material = new THREE.MeshBasicMaterial({
             map: texture,
             transparent: true,
-            opacity: 0.3,
+            opacity: 0.4,
             side: THREE.DoubleSide
         });
         const mesh = new THREE.Mesh(geometry, material);
